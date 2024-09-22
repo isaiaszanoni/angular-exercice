@@ -10,9 +10,7 @@ import { ReadMoreComponent } from './about-me/read-more/read-more.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FirstPageComponent,
-    ReadMoreComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

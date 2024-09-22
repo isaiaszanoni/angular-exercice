@@ -1,16 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FirstPageComponent } from './about-me/first-page.component';
-import { ReadMoreComponent } from './about-me/read-more/read-more.component';
+import { ContactPageComponent } from './pages/contact-page.component';
 
 const routes: Routes = [
-  {
-    path: 'about-me', 
-    component: FirstPageComponent,
-    children : [
-      { path: 'read-more', component: ReadMoreComponent }
-    ]
-  }
+  { path: 'about-me', loadChildren: () => import('./about-me/about-me.module').then(m => m.AboutMeModule) },
+  { path: '', component: ContactPageComponent}
 ];
 
 @NgModule({
