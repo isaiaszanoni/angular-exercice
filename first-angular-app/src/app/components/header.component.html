@@ -1,0 +1,39 @@
+<style>
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #7CF0A8;
+        gap: 0;
+
+        margin-bottom: 2px solid grey;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        background-color: #81dfa5;
+    }
+</style>
+
+<header>
+    <h1>
+        <a [routerLink]="['/']">First Angular App</a>
+    </h1>
+
+    <h4>My first angular app for college - Faculdade Descomplica - Isaías Rodrigues Silva</h4>
+    <nav>
+        <ul>
+            <li><a [routerLink]="['/about-me']" >Sobre Mim</a></li>
+        </ul>
+    </nav>
+</header>
